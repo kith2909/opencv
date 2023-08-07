@@ -12,7 +12,7 @@ class TestImageProcessor(unittest.TestCase):
         self.test_image = np.zeros((10, 10), dtype=np.uint8)
 
     def test_patch_average(self):
-        processor = ImageRecognition('path/to/dummy/image.png')
+        processor = ImageRecognition('test.png')
         processor.image = self.test_image
 
         avg = processor.get_patch_average(0, 0)
